@@ -47,6 +47,7 @@ export default function About() {
     "0px 18px 40px rgba(112, 144, 176, 0.12)",
     "unset"
   );
+  const textColor = useColorModeValue("navy.700", "lightpeach.100");
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -177,6 +178,104 @@ export default function About() {
           justifyContent="center"
           alignItems="center"
           mb="40px"
+        >
+          <Text color={textColorPrimary} fontSize="2em" textAlign="center">
+            {"<EXPERIENCE/>"}
+          </Text>
+        </Flex>
+        <Flex flexDirection="column" justify="LEFT" h="100%">
+          <Flex direction="row" align="center" justify="Center">
+            <Text
+              // color={textColor}
+              fontSize={{
+                base: "lg",
+              }}
+              mb="5px"
+              me="14px"
+              textAlign="left"
+            >
+              Experienced React.js Developer with a solid foundation in the MERN
+              stack. Completed a comprehensive MERN stack course and accumulated
+              2 years of professional experience in React.js development.
+              Passionate about creating efficient, scalable, and responsive web
+              applications. Continuously learning and exploring new technologies
+              to enhance development practices and contribute effectively to
+              projects.
+            </Text>
+          </Flex>
+          <Flex direction="row" align="left">
+            <Text
+              color={textColor}
+              fontSize={{
+                base: "3xl",
+              }}
+              mb="5px"
+              me="14px"
+              textAlign="left"
+            >
+              Job responsibilities:
+            </Text>
+          </Flex>
+          <Flex direction="row" align="left">
+            <Text
+              // color={textColor}
+              fontSize={{
+                base: "lg",
+              }}
+              mb="5px"
+              me="14px"
+              ml="30px"
+              textAlign="left"
+            >
+              <ul>
+                <li>
+                  Developed and maintained responsive web applications using
+                  React, ensuring seamless cross-browser compatibility and
+                  optimal performance.
+                </li>
+                <li>
+                  Collaborated closely with design and back-end teams to
+                  implement user interfaces and integrate front-end components
+                  with back-end services.
+                </li>
+                <li>
+                  Utilized Redux for state management, creating efficient and
+                  scalable solutions for complex application workflows.
+                </li>
+                <li>
+                  Implemented RESTful APIs to fetch and update data from the
+                  server, optimizing data retrieval and processing.
+                </li>
+                <li>
+                  Utilized Git for version control, ensuring proper code
+                  versioning, branch management, and collaboration with other
+                  developers.
+                </li>
+                <li>
+                  Actively participated in scrum meetings, providing status
+                  updates and contributing to project planning and estimation.
+                </li>
+                <li>
+                  Troubleshot and resolved bugs and performance issues, ensuring
+                  the delivery of high-quality and optimized web applications.
+                </li>
+                <li>
+                  Collaborated with the QA team to perform thorough testing and
+                  ensure the application's functionality, usability, and
+                  performance.
+                </li>
+                <li>Excellent problem-solving and debugging skills.</li>
+              </ul>
+            </Text>
+          </Flex>
+        </Flex>
+
+        <Flex
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+          mb="40px"
+          mt="40px"
         >
           <Text color={textColorPrimary} fontSize="2em" textAlign="center">
             {"<MY SKILLSET/>"}
