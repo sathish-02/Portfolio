@@ -6,7 +6,8 @@ import {
   MdBarChart,
   MdPersonPin,
   MdCode,
-  MdContacts
+  MdContacts,
+  MdWorkHistory,
 } from "react-icons/md";
 
 import Dashboard from "./views/dashboard/dashboard";
@@ -14,6 +15,7 @@ import About from "./views/about/about";
 import Resume from "./views/resume/resume";
 import Projects from "./views/projects/projects";
 import Contact from "./views/contact/contact";
+import Experience from "./views/experience/experience";
 
 const routes = [
   {
@@ -21,36 +23,45 @@ const routes = [
     path: "/home",
     navbarDisplayName: "<Home/>",
     icon: <Icon as={MdDashboard} width="30px" height="30px" color="inherit" />,
-    component: Dashboard
+    component: Dashboard,
   },
   {
     name: "About Me",
     path: "/about",
     navbarDisplayName: "<About Me/>",
     icon: <Icon as={MdPersonPin} width="30px" height="30px" color="inherit" />,
-    component: About
+    component: About,
+  },
+  {
+    name: "Experience",
+    path: "/experience",
+    navbarDisplayName: "<Experience/>",
+    icon: (
+      <Icon as={MdWorkHistory} width="30px" height="30px" color="inherit" />
+    ),
+    component: Experience,
   },
   {
     name: "Projects And Blogs",
     path: "/projects",
     navbarDisplayName: "<Projects And Blogs/>",
     icon: <Icon as={MdCode} width="30px" height="30px" color="inherit" />,
-    component: Projects
+    component: Projects,
   },
   {
     name: "Resume",
     path: "/resume",
     navbarDisplayName: "<Resume/>",
     icon: <Icon as={MdBarChart} width="30px" height="30px" color="inherit" />,
-    component: Resume
+    component: Resume,
   },
   {
     name: "Contact Me",
     path: "/contact",
     navbarDisplayName: "<Contact/>",
     icon: <Icon as={MdContacts} width="30px" height="30px" color="inherit" />,
-    component: Contact
-  }
+    component: Contact,
+  },
 ];
 
 export default routes;
