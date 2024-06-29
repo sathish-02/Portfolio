@@ -9,7 +9,7 @@ import {
 import routes from "../../routes";
 import Navbar from "../../components/Navbar/Navbar";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
-import nftproject from "../../assets/homepagemain.png";
+import nftproject from "../../assets/homepagemain1.png";
 import trading from "../../assets/tradingDashboard.png";
 import nike from "../../assets/nike.png";
 import epicGame from "../../assets/epicGame.png";
@@ -45,7 +45,7 @@ export default function Projects() {
           mb="40px"
         ></Flex>
         <SimpleGrid
-          columns={{ base: 1, md: 3 }}
+          columns={{ base: 1, md: 3, "3sm": 2 }}
           gap="25px"
           alignItems="center"
           justifyContent="center"

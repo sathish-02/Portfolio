@@ -35,8 +35,13 @@ export default function ProjectCard(props) {
         xl: { transform: "scale(1.03)", boxShadow: "md", border: "1px solid" },
       }}
     >
-      <Box mb={{ base: "10px", "2xl": "10px" }}>
-        <Skeleton
+      <div style={{ maxHeight: "250px" }}>
+        <img
+          src={projectImage}
+          alt="dsd"
+          style={{ height: "250px", width: "100%" }}
+        />
+        {/* <Skeleton
           isLoaded={loadedprojectimg}
           color="white"
           fadeDuration={1}
@@ -44,23 +49,23 @@ export default function ProjectCard(props) {
         >
           <LazyLoadImage
             src={projectImage}
-            w={{ base: "100%", "3xl": "100%" }}
-            h={{ base: "100%", "3xl": "250px" }}
+            // w={{ base: "100%", "3xl": "100%" }}
+            // h={{ base: "100%", "3xl": "250px !important" }}
             borderRadius="10px"
             p="20px"
             effect="blur"
             onLoad={() => setloadedprojectimg(true)}
             wrapperProps={{
               // If you need to, you can tweak the effect transition using the wrapper style.
-              style: { objectFit: "cover", border: "5px" },
+              style: { objectFit: "cover", border: "5px", height:"200px !important" },
             }}
 
             // border="2px solid"
             // borderColor={textColor}
           />
-        </Skeleton>
-      </Box>
-      <Flex flexDirection="column" justify="center" h="100%">
+        </Skeleton> */}
+      </div>
+      <Flex flexDirection="column" justify="center" mt={"1rem"} h="100%">
         <Flex direction="row" align="center" justify="Center">
           <Text
             color={textColor}
