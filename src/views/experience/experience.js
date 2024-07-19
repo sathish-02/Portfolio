@@ -75,7 +75,7 @@ export default function Experience() {
             me="14px"
             textAlign="left"
           >
-            Gravity Loft Solutions | May 2022 - Present
+            Gravity Loft Solutions | May 2021 - Present
           </Text>
         </Flex>
         <Flex flexDirection="column" justify="LEFT" h="100%">
@@ -91,7 +91,7 @@ export default function Experience() {
             >
               Experienced React.js Developer with a solid foundation in the MERN
               stack. Completed a comprehensive MERN stack course and accumulated
-              2 years of professional experience in React.js development.
+              3 plus years of professional experience in React.js development.
               Passionate about creating efficient, scalable, and responsive web
               applications. Continuously learning and exploring new technologies
               to enhance development practices and contribute effectively to
