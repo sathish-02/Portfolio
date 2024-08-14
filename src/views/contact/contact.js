@@ -160,11 +160,11 @@ export default function Contact() {
 
               <Text color={textColorPrimary} textAlign="center" mt="5px">
                 <a
-                  href="mailto:sathishb163@gmail.com"
+                  href="mailto:sathishb.baalan@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  sathishb163@gmail.com
+                  sathishb.baalan@gmail.com
                 </a>
               </Text>
             </Box>
